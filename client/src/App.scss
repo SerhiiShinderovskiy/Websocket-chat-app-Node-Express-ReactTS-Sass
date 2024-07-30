@@ -1,0 +1,68 @@
+$teal-color: teal;
+$display-flex: flex;
+$width-value: 400px;
+$center-pos: center;
+$margin-top-value: 15px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.center {
+    display: $display-flex;
+    justify-content: $center-pos;
+    width: 100%;
+    margin-top: 30px;
+}
+  
+.form {
+    padding: 40px;
+    width: $width-value;
+    border-radius: 8px;
+    border: 2px solid $teal-color;
+    display: $display-flex;
+    flex-direction: column;
+}
+  
+.form input {
+    min-width: 300px;
+    width: 100%;
+    padding: 5px 10px;
+    border: $teal-color 1px solid;
+    &:focus {
+        outline: none;
+    }
+}
+  
+.form button {
+    margin-top: $margin-top-value;
+    margin-left: auto;
+    border: $teal-color 1px solid;
+    background: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: $teal-color;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+  
+// .form button:focus, .form input:focus {
+//     outline: none;
+// }
+  
+.connection-message {
+    width: $width-value;
+    text-align: $center-pos;
+}
+  
+.message {
+    width: $width-value;
+    border: 2px solid $teal-color;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: $margin-top-value;
+}
